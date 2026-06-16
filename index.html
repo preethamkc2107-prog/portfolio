@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preetham | AI & Data Science Portfolio</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Portfolio of Preetham, a B.Tech student in Artificial Intelligence and Data Science at Reva University. Explore my machine learning projects, skills, and academic timeline.">
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background grid & blur blobs for premium dark aesthetic -->
+    <div class="blob-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Preetham<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Timeline</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                </button>
+                <!-- Hamburger Menu Button -->
+                <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-sub">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Preetham</span></h1>
+                    <h2 class="hero-subtitle">I am a <span class="typewriter" id="typewriter"></span><span class="cursor">|</span></h2>
+                    <p class="hero-desc">
+                        A passionate student in Artificial Intelligence and Data Science at Reva University. I specialize in building intelligent software systems, training robust ML models, and translating complex data into premium web applications.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="mailto:preetham@example.com" class="social-icon" aria-label="Email"><i data-lucide="mail"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-container">
+                        <img src="assets/avatar.png" alt="Preetham Portrait" class="hero-image">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>Engineering intelligent solutions with data and code.</h3>
+                        <p>
+                            I am a student in Artificial Intelligence and Data Science at Reva University, passionate about developing intelligent, data-driven software solutions. My journey started with a deep curiosity about algorithms and automation, which quickly evolved into training machine learning models and engineering web applications.
+                        </p>
+                        <p>
+                            I enjoy exploring the intersection of AI and Web technologies—integrating deep learning architectures with clean, responsive frontends. I focus on structural code quality, data analysis, and building user-centric interfaces.
+                        </p>
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Bangalore, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">preetham@example.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Availability</span>
+                                <span class="detail-value text-accent">Open to Internships</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <h4 class="stat-number">9.2+</h4>
+                            <p class="stat-label">Current CGPA</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="check-square"></i>
+                            </div>
+                            <h4 class="stat-number">10+</h4>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <h4 class="stat-number">4+</h4>
+                            <p class="stat-label">Hackathons & Events</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">My Arsenal</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Category 1: Artificial Intelligence & Machine Learning -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="cpu" class="category-icon"></i>
+                            <h3>Artificial Intelligence & ML</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python & ML Libraries</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Machine Learning (Scikit-Learn)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Deep Learning (PyTorch)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Natural Language Processing</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 78%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Data Science & Analytics -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="database" class="category-icon"></i>
+                            <h3>Data Science & Analytics</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL & Databases</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Data Preprocessing (Pandas/NumPy)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Data Visualization (Tableau/Matplotlib)</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 82%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Statistical Analysis</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Software & Web Development -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="layout" class="category-icon"></i>
+                            <h3>Software & Web Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5 & CSS3 / JS</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Full-Stack Web (React, Node.js)</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 82%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub Workflows</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Docker & Cloud Deployment</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-progress"><div class="skill-progress-bar" style="width: 70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Projects Category Filter -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science</button>
+                    <button class="filter-btn" data-filter="rl-sim">RL & Simulation</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: NeuroScan -->
+                    <div class="project-card glass-card" data-category="ai-ml" data-id="neuroscan">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project-neuroscan.png" alt="NeuroScan MRI Diagnostics Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <span class="project-tag">Computer Vision</span>
+                                    <h3 class="project-card-title">NeuroScan</h3>
+                                    <p class="project-card-desc">An AI-powered MRI brain scan classifier that detects and segments brain tumors using PyTorch.</p>
+                                    <button class="btn btn-sm btn-primary view-details-btn">
+                                        <span>Details</span>
+                                        <i data-lucide="info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Sentilytics -->
+                    <div class="project-card glass-card" data-category="data-science" data-id="sentilytics">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project-sentiment.png" alt="Sentilytics Sentiment Analytics Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <span class="project-tag">Natural Language Processing</span>
+                                    <h3 class="project-card-title">Sentilytics</h3>
+                                    <p class="project-card-desc">A real-time trend analytics dashboard forecasting sentiment patterns using transformer models.</p>
+                                    <button class="btn btn-sm btn-primary view-details-btn">
+                                        <span>Details</span>
+                                        <i data-lucide="info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: OptiRoute -->
+                    <div class="project-card glass-card" data-category="rl-sim" data-id="optiroute">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project-traffic.png" alt="OptiRoute Smart Traffic Simulation" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <span class="project-tag">Reinforcement Learning</span>
+                                    <h3 class="project-card-title">OptiRoute</h3>
+                                    <p class="project-card-desc">A deep reinforcement learning simulation environment optimizing signal timings at traffic intersections.</p>
+                                    <button class="btn btn-sm btn-primary view-details-btn">
+                                        <span>Details</span>
+                                        <i data-lucide="info"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience Timeline Section -->
+        <section class="timeline-section section-padding" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">My Journey</span>
+                    <h2 class="section-title">Education & Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Node 1: Education (Current) -->
+                    <div class="timeline-item timeline-edu left-side">
+                        <div class="timeline-dot">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023 - 2027 (Expected)</span>
+                            <h3 class="timeline-title">B.Tech in AI & Data Science</h3>
+                            <h4 class="timeline-org">Reva University, Bangalore</h4>
+                            <p class="timeline-desc">
+                                Pursuing undergraduate degree with coursework focusing on Machine Learning, Neural Networks, Data Structures, Database Systems, and Design of Algorithms. Maintained a high academic standing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 2: Internship -->
+                    <div class="timeline-item timeline-work right-side">
+                        <div class="timeline-dot">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Summer 2025</span>
+                            <h3 class="timeline-title">AI Developer Intern</h3>
+                            <h4 class="timeline-org">AI Research Cell, Reva University</h4>
+                            <p class="timeline-desc">
+                                Worked on building and fine-tuning object detection models. Developed Python scripts for automated data preprocessing and annotation pipelines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 3: Hackathons -->
+                    <div class="timeline-item timeline-work left-side">
+                        <div class="timeline-dot">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024</span>
+                            <h3 class="timeline-title">Hackathon Project Lead</h3>
+                            <h4 class="timeline-org">Smart India Hackathon / Tech Fest</h4>
+                            <p class="timeline-desc">
+                                Led a team of 4 to design an AI-powered automated smart attendance system using facial recognition. Built the frontend interface and integrated it with a Flask-based API backend.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 4: High School / PU -->
+                    <div class="timeline-item timeline-edu right-side">
+                        <div class="timeline-dot">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3 class="timeline-title">Pre-University Education</h3>
+                            <h4 class="timeline-org">Pre-University College, Bangalore</h4>
+                            <p class="timeline-desc">
+                                Specialized in Physics, Chemistry, Mathematics, and Computer Science. Graduated with top marks, fostering a deep interest in computational methods.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Have a project?</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's build something awesome together.</h3>
+                        <p>
+                            I'm open to summer internships, project collaborations, or developer contracts. Drop me a line, and let's build something intelligent together.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Email Me</h4>
+                                    <a href="mailto:preetham@example.com">preetham@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method-card glass-card">
+                                <div class="method-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Location</h4>
+                                    <p>Bangalore, Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contact-form" autocomplete="off">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="contact-name" class="form-input" required placeholder=" ">
+                                    <label for="contact-name" class="form-label">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="contact-email" class="form-input" required placeholder=" ">
+                                    <label for="contact-email" class="form-label">Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contact-subject" class="form-input" required placeholder=" ">
+                                    <label for="contact-subject" class="form-label">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" class="form-input" rows="5" required placeholder=" "></textarea>
+                                <label for="contact-message" class="form-label">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send" id="submit-icon"></i>
+                            </button>
+                        </form>
+                        <div class="form-feedback-message" id="form-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Preetham. All Rights Reserved. Pursuing B.Tech AI & DS at Reva University.</p>
+            <a href="#home" class="scroll-top-btn" aria-label="Scroll to top">
+                <i data-lucide="chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Project Details Lightbox Modal -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog glass-card">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img src="" alt="Project Preview Image" id="modal-project-img" class="modal-img">
+                    <div id="modal-project-gradient" class="project-gradient-placeholder">
+                        <i data-lucide="code" class="placeholder-icon"></i>
+                        <span class="placeholder-text">Project Illustration</span>
+                    </div>
+                </div>
+                <div class="modal-info-container">
+                    <span class="modal-tag" id="modal-project-tag">Category</span>
+                    <h2 class="modal-title" id="modal-project-title">Project Title</h2>
+                    <p class="modal-desc" id="modal-project-desc">Detailed project description goes here.</p>
+                    
+                    <div class="modal-details-grid">
+                        <div>
+                            <h4>Key Features</h4>
+                            <ul class="modal-features-list" id="modal-project-features">
+                                <!-- Populated dynamically -->
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Technologies Used</h4>
+                            <div class="modal-tech-badges" id="modal-project-tech">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary" id="modal-btn-demo">
+                            <span>Live Demo</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary" id="modal-btn-code">
+                            <span>GitHub Code</span>
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
